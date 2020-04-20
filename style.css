@@ -1,0 +1,386 @@
+
+@font-face{
+  font-family: 'futura';
+  src:url('ressources/fonts/futura_light_bt.ttf');
+}
+
+body{
+  color: white;
+  background: #171717;
+  font-family: futura;
+  border: 5px;
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body div{
+  background: #1b1b1b;;
+}
+
+nav{
+  /*list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content:center;*/
+
+  position: sticky;
+  top: 0px;
+
+  background-color: #232323;
+  border-top: 3px ;
+  border-bottom: 3px ;
+  margin: 2em 0em 2em 0em;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+nav ul li{
+  float: left;
+  width: 20%;
+  height: 4%;
+  text-align: center;
+  position: relative;   /*garde la taille du parent*/
+}
+
+nav ul li:hover{
+  background: #4f4f4f;
+}
+
+nav ul li ul li{
+
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  padding: 5% 0px;
+  /*color: orange;
+  background: red;*/
+}
+
+nav p{
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  padding: 5% 0px;
+  margin: 0;
+}
+
+nav a:hover{
+  color: white;
+  /*border-bottom: 2px solid gold;*/
+}
+
+.sous{
+  display: none;
+  box-shadow: 2px 4px 5px #232323;
+  background-color: #232323;  /*bg de notre sous menu*/
+  position:absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav > ul li:hover .sous{      /*sert à cibler un sous menu de .sous lorsque l'utilisateur passe la souris sur un élément li de la liste représentant notre menu principal.*/
+  display: block;
+}
+
+.sous li{
+  /*les éléments de nos sous-menus s’affichent cette fois-ci les uns en dessous des autres,
+  occupent tout l’espace disponible dans leur conteneur et que le texte soit aligné à gauche.
+  On va donc annuler le flottement hérité des onglets du menu principal.*/
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.sous a{
+  /*padding: 10px 0px;*/
+}
+
+.sous a:hover{
+  /*background: #232323;*/
+}
+
+.deroulant {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.deroulant > a::after{
+  content:"▼";
+  font-size: 12px;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  /* border: 2px solid orange; */
+  /* border-radius: 5px; */
+  /* background-color: #2b2b2b; */
+  margin: 2em 1em 2em 1em;
+  padding: 2em;
+}
+
+.article-div{
+  display: flex;
+  flex-direction: row;
+  border: 5px /*solid green*/;
+
+}
+.article-box-div{
+  display: block;
+  /*height: 100px;*/
+  text-align: justify;
+  margin: 20px;
+  border: 5px /*solid red*/;
+}
+
+.article-portrait-dev{
+  display: flex;
+}
+
+.article-portfolio{
+  background-size: cover;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+
+
+h1{
+  color: #a7a7a7;
+  font-size: 4em;
+  text-align: center;
+  margin: 10px 10% 10px 10%;  /*auto: calcule la marge automatiquerment pour le centrer sur la page./!\ a 1 condition: il faut au moins indiquer la largeur du block (width) */
+  padding: 0px 10px 0px 10px;
+  border-top: 3px solid #3b3b3b;
+  border-bottom: 3px solid #3b3b3b;
+}
+
+h2{
+  color: white;
+  font-size: 2em;
+  margin: 10px 20% 10px 20%;
+  border-top: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.3em 0em 0.3em 0em;
+  border-top: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+}
+
+h4{
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 25% 10px 25%;
+  border-top: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+
+}
+
+div{
+  border: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.div-portfolio{
+  border: 3px solid transparent;
+  border-radius: 5px;
+  margin: 1em 0em 1em 0em;
+  background: #1b1b1b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;/*space-between;*/  /*space-around*/
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+.div-portfolio article{
+  height: 288px;
+  width: 288px;
+}
+
+.div-portfolio a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.div-portfolio a:hover{
+  border: 2px solid #404040;
+  border-radius: 3px;
+  background-color: #212121;
+
+}
+
+.div-header-image {
+  background-image: url(ressources/images/welcome_stripe.jpg);
+  background-size: cover;
+  border-radius: 0px;
+  height: 25em;
+  max-height: 25em;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-header-image div{    /*  INUTILISE : alternative pour l'image du header*/
+  max-height: 50%;
+  max-width: 50%;
+  line-height: 0em;
+  font-family: Arial;
+  font-size: 300%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid white;
+}
+
+input{
+  color: white;
+  background-color: #3b3b3b;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+button{
+  color: white;
+  font-weight: bold;
+  background-image: url(ressources/images/welcome_stripe.jpg);
+  background-size: cover;
+  height: 3em;
+  width: 8em;
+  border: 2px solid orange;
+  border-radius: 4px;
+}
+
+ol{
+
+}
+
+ul{
+
+}
+
+p{
+  font-size: 1em;
+  overflow: visible;  /*(quand ya trop de texte pour la taille du block) visible: par défaut, ben on voit tout qui dépasse/hidden: le texte sera coupé et on ne verra pas ce qui dépasse./scroll: le navigateur ajoute des barres de défilements pour scroll down le text./auto : le navigateur décide ce qu'il doit faire. (le plus souvent il met des scroll bars)*/
+  word-wrap:  break-word; /*on force le navigateur à aller à la ligne meme si le mot n'est pas terminé*/
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+a{
+  color: white;
+}
+
+/*commentaires*/
+
+
+#CONTACT{
+  margin: 1em 0em 1em 1em;
+  min-width: 5em;
+}
+
+
+
+#cv{              /*id*/
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 3px solid orange;
+  border-radius: 5px;
+}
+
+.ytvideo{         /*class*/
+  display: block;
+  width:100%;
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testFlexBox{
+  display: flex;
+  flex-direction: column; /*culumn / column-reverse /row-reverse       */
+  border: 5px solid green
+}
+.divs{
+  width: 100px;
+  height: 100px;
+  color: green;
+}
+
+.divs:nth-child(1)
+{
+  background-color: orange
+}
+.divs:nth-child(2)
+{
+  background-color: blue
+}
+.divs:nth-child(3)
+{
+  background-color: #ad6
+}
+
+footer{
+  font-size: small;
+  text-align: center;
+  border: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*position: sticky;
+  bottom: 0px;*/
+}
+
+/*
+taille absolue: en pixels
+taille relative: en pourcentages, en "em" ou en "ex" (plus souple: s'adapte plus facilement aux différents écrans)
+em: unité de taille:
+      - 1em = le texte a une taille normale
+
+
+exemple des sous menus:
+  - il y a des fois ou on peut placer les styles généraux des sous menus soit dans le sélecteur nav [...] sois dans le selecteur .name . Par défaut, on préfèrera placer les styles dans le sélecteur le plus simple et général.
+
+*/

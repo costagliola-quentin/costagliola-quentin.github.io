@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Quentin Costagliola</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/icons/portrait.ico"/>
+    <div style="display: flex; justify-content: space-between">
+      <a href="https:www.youtube.com/channel/UC_qknhGN5GKTW3_ssI7H4Xg"><img src="ressources/icons/yt.ico" style="width: 20%"></a>
+      <div id="moto">
+        <!--<p>Still creative to keep smile!</p>-->
+      </div>
+      <a href="contact.html" style="text-decoration: none"><p id="CONTACT">CONTACT</p></a>
+      <a href="about.html" style="text-decoration: none"><p id="CONTACT">ABOUT</p></a>
+    </div>
+    <div>
+        <img src="ressources/images/welcome_stripe.jpg" style="max-height: 25em" title="welcome stripe"/>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>
+          <ul>
+            <li class="deroulant"><p>Portfolio</p>
+              <ul class="sous">
+                <li><a href="portfolio.html">WIP</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  <head>
+  <body>
+    <div>
+      <article>
+          <img src="ressources/images/portfolio/0074_cryptenger_banner.png" />
+          <div class="article-div">
+            <div class="article-box-div">
+              <h3>Intro</h3>
+              <p>Ce projet est réalisé dans le carde du baccalauréat 2020, ou du moins de ce qu'il en reste.</p>
+              <p>Le but est de réaliser une application de chat cryptée. Nous avons appelé cette application Cryptenger.</p>
+            </div>
+            <div class="article-box-div">
+              <h3>Répatition des rôles </h3>
+              <p>L'équipe est composée de moi-même, de Quentin A, et d'Adrien Luitot.</p>
+              <p>Globalement, je me suis occupé de l'aspet graphique avec PyQt5 et de l'organisation globale du client. Quentin A s'est lui occupé du serveur et de la base de la réception du client, et Adrien s'est lui occupé de la cryptographie. Je me suis aussi occupé des bannières, du logo, et de l'intro du futur trailer de l'application. Je fais cette prérsentation sur mon site personnel car Adrien qui s'occupe de la partie web n'a pas terminé les fondations du site.</p>
+            </div>
+          </div>
+          <p>Cryptenger est divisée en deux fenêtres principales. La première est l'écran de connection ou l'utilisateur entre son pseudonyme, l'adresse du serveur, et le port du serveur. On peut avoir un aperçu de cette fenêtre sur l'image ci-dessous.</p>
+          <img src="ressources/images/portfolio/0074_connection_win.jpg"  > <!--style="width: 50%"-->
+
+          <p>Si l'utilisateur ne rentre pas une des informations Cryptenger lui dit laquelle il a oubliée.</p>
+          <p>Après avoir cliqué sur <em>connection</em> ou avoir pressé <em>entrée</em>, Cryptenger lance la connexion et la fenêtre pincipale apparaît.</p>
+          <img src="ressources/images/portfolio/0074_cryptenger_win.jpg">
+          <p>En haut à gauche nous avons les infos sur le serveur qui apparaissent, en dessous la liste des différents channels (envoyée par le serveur), en dessous les informations sur l'utilisateur. Au centre la liste des messages du channel actuel apparaît. En dessous nous avons la zone de saisie du message. Enfin, à droite, nous avons la liste des membres actuellement connectés au serveur.</p>
+          <p>Pour les icons nous avons utilisé le principe des <em>Identicons</em>. Cela signifie les formes et la couleur de l'icon sont générées en fonction d'un texte choisis, soit dans notre cas du nom du serveur, du channel ou de l'utilisateur. Afin de différencier seveur, utilisateur, et channel, nous avons changé les arrière plans des icons. Aussi, chaque nom d'utilisateur a un icon et une couleur difféente.</p>
+
+          <p>Toutes les settings tels que les dimentions des fenêtres et "zones" des fenêtres, ou encore la couleur des icons sont stoqués dans des fichiers <em>json</em>.</p>
+          <img src="ressources/images/portfolio/0074_json_overview.jpg" style="width: 30%;">
+
+          <p>On peut voir l'actuel channel marqué en faut de la liste des channels en gras, ainsi que dans la zone de saisie.</P>
+          <p>(Work In Progress)</p>
+      </article>
+    </div>
+
+    <footer>
+      <p> - COSTAGLIOLA Quentin - 2019 - <a href="dev.html">dev</a> -</p>
+    </footer>
+  </body>
+</html>

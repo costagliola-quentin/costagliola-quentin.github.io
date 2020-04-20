@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <title>Quentin Costagliola</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/icons/portrait.ico"/>
+    <link rel="import" href="header.html" />
+
+    <div style="display: flex; justify-content: space-between">
+      <a href="https:www.youtube.com/channel/UC_qknhGN5GKTW3_ssI7H4Xg"><img src="ressources/icons/yt.ico" style="width: 20%"></a>
+      <div id="moto">
+        <!--<p>Still creative to keep smile!</p>-->
+      </div>
+      <a href="contact.html" style="text-decoration: none"><p id="CONTACT">CONTACT</p></a>
+      <a href="about.html" style="text-decoration: none"><p id="CONTACT">ABOUT</p></a>
+    </div>
+    <div>
+        <img src="ressources/images/welcome_stripe.jpg" style="max-height: 25em" title="welcome stripe"/>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>
+          <ul>
+            <li class="deroulant"><p>Portfolio</p>
+              <ul class="sous">
+                <li><a href="portfolio.html">WIP</a></li>
+                <li><a href="scripts.html">Scripts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+  <head>
+  <body>
+    <article>
+      <form method="GET" action="https://www.qwant.com" id="form">
+        <div align="left">
+          <table bgcolor="#FFFFFF">
+            <tbody>
+              <tr>
+                <td style="color: black">Qwant
+                  <!--<a href="https://www.qwant.com"> <img src="https://www.qwant.com/img/logo/q-48.png" border="0" alt="Qwant" align="absmiddle"></a>-->
+                  <input type="text" name="q" id="query" size="31" maxlength="255" value="What do you want to know?">
+                  <input type="hidden" name="l" value="fr">
+                  <input type="submit" name="btnG" value="go">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </article>
+
+    <h1>Ici ma page de tests</h1>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div w3-include-html="cv.html">dsfsdf</dev>
+
+    <script src="dev.js"></script>
+    <p><a href="index.html"> retour a l'accueil</a></p>
+
+    <article>
+      <h2>Ctrl + Maj + I pour voir javascript (chrome)</h2>
+    </article>
+
+    <article>
+      <h1> <em>Quentin COSTAGLIOLAito</em> </h1>
+      <h1> <strong>Quentin COSTAGLIOLA</strong> </h1>
+    </article>
+
+    <article style="text-align: justify">
+      <p>Je m'appelle Quentin Costagliola et je fais de la <mark>CGI</mark></p>
+      <!-- Listes non ordonnées -->
+      <ul>
+        <li>Modeling</li>
+        <li>UVs</li>
+        <li>
+          <ul>ptn c'est vraiment chiant putain!!!</ul>
+        <li>
+        <li>Video games</li>
+      </ul>
+      <!-- liste ordonnée -->
+      <ol>
+        <li>liste ordonnée</li>
+        <li>artfx</li>
+        <li>esma</li>
+        <li>objectif 3D</li>
+      </ol>
+      <dl>list
+        <li>lil</li>
+        <li>ouah ben c'est bien ca</li>
+      </dl>
+      <p>Maintenant on va sur <a href="https://www.youtube.com/?hl=fr&gl=FR">Youtube</a> loul</p>
+      <p><a href="notes/website.zip">télécharger mon fichier notes</a></p>
+      <p> <span class="testBalisesUniverselles">bienvenue</span> les terriens</p>
+      <!--
+      on ne veut colorier que "bienvenue" en lui attribuant un stylesheet.
+      on va utiliser les balises universelles : elles ne servent a rien (elles n'ont aucune signification particulière)
+      <span> </span> : balilse de type inline (comme trong et em)
+      <div> </div> : balise de type block (comme p et h1) : ces balises créent un nouveau block de texte et donc un nouveau retour à la ligne.
+      -->
+      <p>tous les sélecteurs : <a href="https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors">w2.org</a></p>
+    </article>
+
+    <article class="article-portrait-dev" style="display: flex; flex-direction:row">
+      <div>
+        <p>Je m'appelle Quentin Costagliola et je fais de la <strong>CGI</strong></p>
+        <p>Mes coordonnées : </p>
+        <p><a href="cv.html" title="mon CV" target="_blank">page CV</a></p>              <!-- title : tooltip target: nouvelle page-->
+        <p><a href="tests.html">page tests</a></p>
+      </div>
+      <div>
+        <p>photo<img style="width: 30%" src="ressources/images/portrait.png" alt="portrait" title= "infobulle"/></p>
+        <figure>  <!-- cette balise indique a l'ordinateur que cette image a du sens et qu'elle est importante (but sémantique)-->
+          <img style="width: 30%" src="ressources/images/portrait.png" alt="portrait" title= "infobulle"/>
+          <figcaption> ceci est une légende</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article>
+      <div>
+        <div class="divs"></div>
+        <div class="divs"></div>
+        <div class="divs"></div>
+      </div>
+
+      <div class="testFlexBox">
+        <div class="divs"><p> text1 </p></div>
+        <div class="divs"><p> text2 </p></div>
+        <div class="divs"><p> text3 </p></div>
+      </div>
+
+      <iframe width="200" height="150" src="https://cse.google.com/cse?cx=014846007524354008708:rnu0jcplsgx"> </iframe>
+
+      <table>
+        <tr>  <!-- ligne-->
+          <td>  <!-- colonne-->
+            <p> 0:0</p>
+            <p> 1:0</p>
+          </td>
+          <td>
+            <p> 0:1</p>
+            <p>1:1</p>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <footer>
+      <p> - COSTAGLIOLA Quentin - 2019 - <a href="dev.html">dev</a> -</p>
+    </footer>
+
+    <script>
+      /*alert('ceci est affiché en java script(body)')*/
+
+    </script>
+  <body>
+</html>
+
+
+
+
+<!--
+long commentaire
+figure: tout ce qui vient peupler le site et supporter le texte
+class et id sont casiment identiques (pour attribuer un style). la seule différence est que id ne peut être utilisé qu'un seule fois dans le code
+balises block (boites) et inline
+  - block: par défault prend toute la largeur
+  - inline : délimitent du texte au milieu d'une ligne
+
+
+
+html est fixe: quand le client envoie une requete au serveur ce qui est renvoyé par le serveur est static: il n'est pas adapté à l'utilisateur.
+contrairement au php. le php peut gérer les filtres mais pas le html
+html est un langage interprété.
+
+
+
+PHP
+LAMP: Linux Apache MySQL PHP 	(équivalent pour windows: WAMP, mac: MAMP)
+
+
+
+-->
+<!-- https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 -->
