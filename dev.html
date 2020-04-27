@@ -58,12 +58,109 @@
         </div>
       </form>
     </article>
+    <a href="dev.php">dev.php</a>
 
+    <h1>JS LEARNING</h1>
+
+    <button onclick="popAlertMessage()" style="width: 10em">Button to test js signal and slot</button>
+
+    <button onclick="changeImageSourceOnClick()" style="width: 10em">Change image source on click</button>
+
+    <button onclick="changeHTMLcontent()"> Change html content</button>
+    <p id="ElementToChange">Change HTML content</p>
+    <p onclick="this.innerHTML = 'Ooops'">Click on this text!</p>
+
+    <button onclick="displayDate()">The time is?</button>
+    <p id="showDate"></p>
+
+    <!-- fonctionne pas -->
+    <button id="assignEvent">AssignEvent</button>
+    <button onclick="document.getElementById('assignEvent').onClick = displayDate">Active the button event</button>
+
+    <figure>
+      <img id="ImageToChange" src="ressources/images/portrait.png" style="width: 20em">
+      <figcaption>Image to change on click</figcaption>
+    </figure>
+
+    <p id="styleToChange">test</p>
+    <button onclick="changeCSSstyle()" id="styleToChanges">click me </button>
+
+    <p id="showOrHideText"> Text to hide or show</p>
+    <button onclick="showOrHideText()">show/hide text</button>
+
+    <p>ANIMATE</p>
+    <button onclick="animation()">On click </button>
+    <div style="width: 400px; height: 400px; position: relative; background: yellow;">
+      <div id="animate" style="width: 50px; height: 50px; position: absolute; background-color: red;"></div>
+    </div>
+
+    <div onload="checkCookies()">
+      <p>checkCookies :</p>
+      <p id="demo" ></p>
+      <button onclick="checkCookies()">Check cookies</button>
+    </div> <br>
+
+    <input type="text" id="fname" onchange="upperCase()"><br><br>
+
+    <div  onmouseover="mOver(this)"
+          onmouseout="mOut(this)"
+          style="
+            background-color:#D94A38;
+            width:120px;
+            height:20px;
+            padding:40px;"
+    >
+      Mouse Over Me
+    </div><br>
+
+    <div  onmousedown="mDown(this)"
+          onmouseup="mUp(this)"
+          style="
+            background-color:#D94A38;
+            width:90px;
+            height:20px;
+            padding:40px;"
+    >
+      Click Me
+    </div>
+
+    <p> add event listener</p>
+    <button id="myBtn">Try it</button>
+    <p id="demoEventListener"></p>
+    <script>
+      document.getElementById("myBtn").addEventListener("click", displayDateL);
+      function displayDateL() {
+        document.getElementById("demoEventListener").innerHTML = Date();
+      }
+    </script>
+    <!-- element.addEventListener("mouseover", myFunction);
+    element.addEventListener("click", mySecondFunction);
+    element.addEventListener("mouseout", myThirdFunction); -->
+
+    <p id="windowListener"></p>
+    <script>
+      window.addEventListener("resize", function(){
+        document.getElementById("windowListener").innerHTML = "Hello, your window has been resized";
+      });
+    </script>
+
+    <p>Add addEventListener parameters</p>
+    <input type="text" id="addEventListenerParam1">
+    <input type="text" id="addEventListenerParam2">
+    <button onclick="addEventListenerParam()">do it</button>
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h1>Ici ma page de tests</h1>
     <br><br><br><br><br><br><br><br><br><br><br>
     <div w3-include-html="cv.html">dsfsdf</dev>
 
     <script src="dev.js"></script>
+    <script src="learning.js"></script>
     <p><a href="index.html"> retour a l'accueil</a></p>
 
     <article>
