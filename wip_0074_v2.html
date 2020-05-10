@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+     $('#head').load("header.html");
+    });
+    </script>
+    <div id="head">
+    </div>
+  <head>
+  <body>
+    <div>
+      <article>
+          <img src="ressources/images/portfolio/0074_cryptenger_banner.png" />
+
+          <p>Cryptenger est divisée en deux fenêtres principales. La première est l'écran de connection ou l'utilisateur entre son pseudonyme, l'adresse du serveur, et le port du serveur. On peut avoir un aperçu de cette fenêtre sur l'image ci-dessous.</p>
+          <img src="ressources/images/portfolio/0074_connection_win.jpg"  > <!--style="width: 50%"-->
+
+          <p>Si l'utilisateur ne rentre pas une des informations Cryptenger lui dit laquelle il a oubliée.</p>
+          <p>Après avoir cliqué sur <em>connection</em> ou avoir pressé <em>entrée</em>, Cryptenger lance la connexion et la fenêtre pincipale apparaît.</p>
+          <img src="ressources/images/portfolio/0074_cryptenger_win.jpg">
+          <p>En haut à gauche nous avons les infos sur le serveur qui apparaissent, en dessous la liste des différents channels (envoyée par le serveur), en dessous les informations sur l'utilisateur. Au centre la liste des messages du channel actuel apparaît. En dessous nous avons la zone de saisie du message. Enfin, à droite, nous avons la liste des membres actuellement connectés au serveur.</p>
+          <p>Pour les icons nous avons utilisé le principe des <em>Identicons</em>. Cela signifie les formes et la couleur de l'icon sont générées en fonction d'un texte choisis, soit dans notre cas du nom du serveur, du channel ou de l'utilisateur. Afin de différencier seveur, utilisateur, et channel, nous avons changé les arrière plans des icons. Aussi, chaque nom d'utilisateur a un icon et une couleur difféente.</p>
+
+          <p>Toutes les settings tels que les dimentions des fenêtres et "zones" des fenêtres, ou encore la couleur des icons sont stoqués dans des fichiers <em>json</em>.</p>
+          <p><img src="ressources/images/portfolio/0074_json_overview.jpg" style="width: 30%;"></p>
+
+          <p>On peut voir l'actuel channel marqué en haut de la liste des channels en gras, ainsi que dans la zone de saisie.</P>
+          <p>En ce qui concerne la connection, nous utilisons les modules socket et select de la Standard Library de python. Pour la cryptographie nous utilisons pycryptodome avec un système de chiffrage à clés symétriques et asymétrique.</p>
+          <p><img src="ressources/images/portfolio/0074_notifications.jpg" style="width: 20%;"></p>
+          <p>Les notifications</p>
+          <p>(Work In Progress)</p>
+      </article>
+    </div>
+
+    <footer>
+      <p> - COSTAGLIOLA Quentin - 2019 - <a href="dev.html">dev</a> -</p>
+    </footer>
+  </body>
+</html>
