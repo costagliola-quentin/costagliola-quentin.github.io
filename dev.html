@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+  <!-- <head>
     <meta charset='utf-8' />
     <title>Quentin Costagliola</title>
     <link rel="stylesheet" href="style.css"/>
@@ -11,7 +11,7 @@
     <div style="display: flex; justify-content: space-between">
       <a href="https:www.youtube.com/channel/UC_qknhGN5GKTW3_ssI7H4Xg"><img src="ressources/icons/yt.ico" style="width: 20%"></a>
       <div id="moto">
-        <!--<p>Still creative to keep smile!</p>-->
+
       </div>
       <a href="contact.html" style="text-decoration: none"><p id="CONTACT">CONTACT</p></a>
       <a href="about.html" style="text-decoration: none"><p id="CONTACT">ABOUT</p></a>
@@ -38,8 +38,42 @@
       </ul>
     </nav>
 
+  <head> -->
+
+
+
+
   <head>
+    <meta charset='utf-8' />
+    <title>Quentin Costagliola</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/icons/portrait.ico"/>
+    <link rel="import" href="header.html" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    // var content = 'header.html';
+    // console.log(content);
+    //   document.getElementById("head").innerHTML = '<object type="html" data="header.html" ></object>';
+
+    $(document).ready(function(){
+
+     $('head').load("header.html");
+
+    });
+
+    </script>
+    <div id="head">
+      <p>hello</p>
+    </div>
+
+  </head>
+
+<!-- document.getElementById("content").innerHTML='<object type="text/html" data="home.html" ></object>'; -->
+
   <body>
+
+
     <article>
       <form method="GET" action="https://www.qwant.com" id="form">
         <div align="left">
